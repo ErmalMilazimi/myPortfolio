@@ -1,36 +1,18 @@
 .nav {
   max-width: 2000px;
-  padding-right: 50px;
-  height: 100vh;
   width: 100%;
+  height: 80px;
   position: fixed;
   top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2193b0), to(#6dd5ed));
-  background: linear-gradient(#2193b0, #6dd5ed);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  z-index: 1;
-}
-
-.nav.hide {
-  top: -100%;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  z-index: 2;
 }
 
 .nav-burger {
   width: 40px;
   height: 20px;
-  position: fixed;
+  position: absolute;
   right: 25px;
   top: 20px;
   z-index: 1;
@@ -97,6 +79,16 @@
 }
 
 .nav-btns {
+  display: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style-type: none;
+}
+
+.nav-btns-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,22 +102,36 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style-type: none;
-}
-
-.nav-btns-btn {
   margin: 50px 0;
 }
 
 .nav-btns-btn a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
   font-size: 35px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .nav-btns-btn a:hover {
   color: #de6262;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav.show {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2193b0), to(#6dd5ed));
+  background: linear-gradient(#2193b0, #6dd5ed);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav.show .nav-btns {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-arrow1 {
@@ -229,6 +235,55 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  main header .header-text {
+    width: 300px;
+  }
+  main header .header-text h3 {
+    font-size: 28px;
+  }
+  main header .header-text .header-text-p1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  main header .header-text .header-text-p2 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  main header .header-text .scroll-btn {
+    margin-top: 20px;
+    width: 50%;
+    height: 50px;
+  }
+  main header .header-text .scroll-btn i {
+    font-size: 28px;
+  }
+  main header .header-text .scroll-btn p {
+    font-size: 18px;
+  }
+  .header-arrow1 {
+    left: -710px;
+  }
+  .header-arrow1 .header-arrow2 {
+    top: -70px;
+    left: -70px;
+  }
+  .header-arrow3 {
+    right: -1110px;
+  }
+  .header-arrow3 .header-arrow4 {
+    top: -70px;
+    right: -70px;
+  }
+  .bio-arrow1 {
+    left: -710px;
+  }
+  .bio-arrow1 .bio-arrow2 {
+    top: 70px;
+    left: -70px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -267,14 +322,18 @@ header {
   width: 100%;
   height: 100vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header-text {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 600px;
   color: black;
   text-align: center;
@@ -296,9 +355,13 @@ header .header-text .header-text-p2 {
 }
 
 header .header-text .scroll-btn {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20px;
   width: 200px;
   height: 50px;
-  margin: 50px auto;
   background: #de6262;
   border-radius: 50px;
   border: none;
@@ -307,7 +370,6 @@ header .header-text .scroll-btn {
   display: flex;
   overflow: hidden;
   color: white;
-  position: relative;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   cursor: pointer;
@@ -344,5 +406,28 @@ header .header-text .scroll-btn:hover i {
 
 header .header-text .scroll-btn:hover p {
   bottom: -100%;
+}
+
+header .header-text .scroll-btn.circle {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  left: 50px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  z-index: 1;
+}
+
+header .header-text .scroll-btn.circle p {
+  display: none;
+}
+
+header .header-text .scroll-btn.circle i {
+  top: -10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 /*# sourceMappingURL=main.css.map */

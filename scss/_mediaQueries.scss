@@ -3,3 +3,59 @@
         right: $arrow-big-right - 140px;
     }
 }
+
+@media only screen and (max-width: 400px){
+    main{
+        header {
+            .header-text{
+                width: 300px;
+                h3{
+                    font-size: 28px;
+                }
+                .header-text-p1{
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+                .header-text-p2{
+                    margin-top: 10px;
+                    font-size: 15px;
+                }
+                .scroll-btn{
+                    margin-top: 20px;
+                    width: 50%;
+                    height: 50px;
+                    i {
+                        font-size: 28px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .header-arrow1{
+        left: $arrow-small-left - 300px;
+
+        .header-arrow2{
+            top: -70px;
+            left: -70px;
+        }
+    }
+    .header-arrow3{
+        right: $arrow-big-right - 500px;
+        
+        .header-arrow4{
+            top: -70px;
+            right: -70px;
+        }
+    }
+    .bio-arrow1{
+        left: $arrow-small-left - 300px;
+
+        .bio-arrow2{
+            top: 70px;
+            left: -70px;
+        }
+    }
+}

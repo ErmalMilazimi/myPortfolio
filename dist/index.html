@@ -13,13 +13,13 @@
 
 <body>
     <main>
-        <header>
-            <nav class="nav hide">
+        <header id="header">
+            <nav class="nav">
                 <ul class="nav-btns">
-                    <li class="nav-btns-btn"><a href="#">Home</a></li>
-                    <li class="nav-btns-btn"><a href="#">Bio</a></li>
-                    <li class="nav-btns-btn"><a href="#">My Project</a></li>
-                    <li class="nav-btns-btn"><a href="#">Contact Me</a></li>
+                    <li class="nav-btns-btn"><a onclick="scrollNav('header')">Home</a></li>
+                    <li class="nav-btns-btn"><a onclick="scrollNav('bio')">Bio</a></li>
+                    <li class="nav-btns-btn"><a >My Projects</a></li>
+                    <li class="nav-btns-btn"><a onclick="scrollNav('bio2')">Contact Me</a></li>
                 </ul>
                 <div class="nav-burger">
                     <div class="nav-burger-line"></div>
@@ -31,10 +31,10 @@
                 <p class="header-text-p1">Web Developer</p>
                 <p class="header-text-p2">This is my personal portfolio which contains all the information about me and
                     my journey in the IT world</p>
-                <a href="#bio" class="scroll-btn">
-                    <p>See more</p>
-                    <i class="fas fa-arrow-down"></i>
-                </a>
+                    <a class="scroll-btn">
+                        <p>See more</p>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
             </div>
 
             <div class="header-arrow1">
@@ -45,12 +45,11 @@
             </div>
         </header>
         <section id="bio" class="bio">
-            <p>Lorem ipsum dolor sit amet.</p>
             <div class="bio-arrow1">
                 <div class="bio-arrow2"></div>
             </div>
         </section>
-        <section class="bio2">
+        <section id="bio2" class="bio2">
 
         </section>
     </main>
