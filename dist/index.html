@@ -14,27 +14,27 @@
 <body>
     <main>
         <header>
-            <nav class="nav hidden">
+            <nav class="nav hide">
                 <ul class="nav-btns">
                     <li class="nav-btns-btn"><a href="#">Home</a></li>
                     <li class="nav-btns-btn"><a href="#">Bio</a></li>
                     <li class="nav-btns-btn"><a href="#">My Project</a></li>
                     <li class="nav-btns-btn"><a href="#">Contact Me</a></li>
                 </ul>
+                <div class="nav-burger">
+                    <div class="nav-burger-line"></div>
+                </div>
             </nav>
-            <div class="nav-burger">
-                <div class="nav-burger-line"></div>
-            </div>
 
             <div class="header-text">
                 <h3>Hi, i am Ermal Milazimi</h3>
                 <p class="header-text-p1">Web Developer</p>
                 <p class="header-text-p2">This is my personal portfolio which contains all the information about me and
                     my journey in the IT world</p>
-                    <a class="scroll-btn">
-                        <p class="">See more</p>
-                        <i class="fas fa-arrow-down"></i>
-                    </a>
+                <a href="#bio" class="scroll-btn">
+                    <p>See more</p>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
             </div>
 
             <div class="header-arrow1">
@@ -44,10 +44,18 @@
                 <div class="header-arrow4"></div>
             </div>
         </header>
-        <section class="bio">
+        <section id="bio" class="bio">
             <p>Lorem ipsum dolor sit amet.</p>
+            <div class="bio-arrow1">
+                <div class="bio-arrow2"></div>
+            </div>
+        </section>
+        <section class="bio2">
+
         </section>
     </main>
+
+    <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/f01fdd5c9b.js" crossorigin="anonymous"></script>
 </body>
 

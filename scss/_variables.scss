@@ -4,7 +4,20 @@ $primary-font-color: black;
 $secondary-font-color: white;
 $nav-background-color: lightblue;
 
+$arrow-big-width:1200px;
+$arrow-big-height:1200px;
+$arrow-big-right:-610px;
+$arrow-big-bottom:-600px;
+
+$arrow-small-width:800px;
+$arrow-small-height:800px;
+$arrow-small-left:-410px;
+$arrow-small-top:-400px;
+
 $arrow2-color:rgb(255, 60, 0);
 $arrow3-color:orange;
 $arrow4-color:lightblue;
 $arrow-shadow-color: rgba(0, 0, 255, .2);
+
+$arrow-gradient-out: #de6262,#ffb88c;
+$arrow-gradient-inner: #2193b0,#6dd5ed;
