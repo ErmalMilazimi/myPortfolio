@@ -25,14 +25,14 @@ function navMenu(){
 
 // for button
 const scrollBtn = document.querySelector('.scroll-btn');
+const bio = document.getElementById("bio");
+const header = document.getElementById("header");
 
 let scroll = false;
 
 scrollBtn.addEventListener('click', scrollFunction);
 
 function scrollFunction(){
-    var bio = document.getElementById("bio");
-    var header = document.getElementById("header");
     if(!scroll){
         bio.scrollIntoView();
         scrollBtn.classList.add('circle');
@@ -45,7 +45,29 @@ function scrollFunction(){
         scroll = false;
     }
 }
+// scroll butons observer
+const sectionOneOptions = {
+    rootMargin: "-400px 0px 0px 0px"
+};
 
+const sectionOneObesrver = new IntersectionObserver(function(entries,sectionOneOptions){
+    entries.forEach(entry => {
+       if(!entry.isIntersecting){
+        scrollBtn.classList.add('circle');
+        
+        scroll = true;
+    }else{
+        scrollBtn.classList.remove('circle');
+
+        scroll = false;
+    }
+    });
+}, sectionOneOptions);
+
+sectionOneObesrver.observe(header);
+
+
+// nav Buttons
 function scrollNav(id){
     let element = document.getElementById(id);
     navMenu();
