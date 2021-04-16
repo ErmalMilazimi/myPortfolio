@@ -102,7 +102,7 @@ header {
                 height: 50px;
                 bottom: 20px;
                 left: 50px;
-                transition: 0.3s ease-in;
+                transition: 0.3s;
                 z-index: 1;
                 p{
                     display: none;
@@ -111,6 +111,10 @@ header {
                     top: -10px;
                     transform: rotate(180deg);
                     transition: 0.3s ease-in;
+                }
+
+                &:hover{
+                    bottom: 25px;
                 }
             }
         }

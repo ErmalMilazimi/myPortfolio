@@ -73,3 +73,13 @@ function scrollNav(id){
     navMenu();
     element.scrollIntoView();
 }
+
+// arrows onload function
+
+let arrow1 = document.querySelector('.header-arrow1');
+let arrow2 = document.querySelector('.header-arrow3');
+
+function moveArrows(){
+    arrow1.classList.remove('left');
+    arrow2.classList.remove('right');
+}

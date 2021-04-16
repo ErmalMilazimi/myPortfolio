@@ -1,10 +1,97 @@
-@media only screen and (max-width: 1600px){
+@media only screen and (max-width: 1600px ),(max-height: 900px){
     .header-arrow3{
         right: $arrow-big-right - 140px;
     }
 }
-
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 1350px ),(max-height: 750px){
+    main{
+        header {
+            .header-text{
+                width: 450px;
+                h3{
+                    font-size: 35px;
+                }
+                .header-text-p1{
+                    font-size: 30px;
+                }
+                .header-text-p2{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .header-arrow1, .bio-arrow1{
+        left: $arrow-small-left - 120px;
+    }
+    .header-arrow3{
+        right: $arrow-big-right - 220px;
+    }
+}
+@media only screen and (max-width: 1100px ){
+    main{
+        header {
+            .header-text{
+                width: 400px;
+                h3{
+                    font-size: 32px;
+                }
+                .header-text-p1{
+                    font-size: 28px;
+                }
+                .header-text-p2{
+                    font-size: 16px;
+                }
+                .scroll-btn{
+                    width: 40%;
+                    i {
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .header-arrow1, .bio-arrow1{
+        left: $arrow-small-left - 140px;
+    }
+    .header-arrow3{
+        right: $arrow-big-right - 240px;
+    }
+}
+@media only screen and (max-width: 900px ){
+    .header-arrow1{
+        left: $arrow-small-left - 200px;
+        .header-arrow2{
+            top: -70px;
+            left: -70px;
+        }
+    }
+    .header-arrow3{
+        right: $arrow-big-right - 320px;
+        .header-arrow4{
+            top: -70px;
+            right: -70px;
+        }
+    }
+    .bio-arrow1{
+        left: $arrow-small-left - 200px;
+        .bio-arrow2{
+            top: 70px;
+            left: -70px;
+        }
+    }
+}
+@media only screen and (max-width: 700px ),(max-height: 650px ){
+    .header-arrow1,.bio-arrow1{
+        left: $arrow-small-left - 250px;
+    }
+    .header-arrow3{
+        right: $arrow-big-right - 400px;
+    }
+}
+@media only screen and (max-width: 500px ){
     main{
         header {
             .header-text{
@@ -34,28 +121,67 @@
             }
         }
     }
+    .header-arrow1,.bio-arrow1{
+        left: $arrow-small-left - 280px;
+    }
+    .header-arrow3{
+        right: $arrow-big-right - 450px;
+    }
+}
+@media only screen and (max-width: 400px){
     .header-arrow1{
         left: $arrow-small-left - 300px;
-
         .header-arrow2{
-            top: -70px;
-            left: -70px;
+            top: -50px;
+            left: -50px;
         }
     }
     .header-arrow3{
         right: $arrow-big-right - 500px;
-        
         .header-arrow4{
-            top: -70px;
-            right: -70px;
+            top: -50px;
+            right: -50px;
         }
     }
     .bio-arrow1{
         left: $arrow-small-left - 300px;
-
         .bio-arrow2{
-            top: 70px;
-            left: -70px;
+            top: 50px;
+            left: -50px;
         }
+    }
+}
+@media only screen and (max-width: 340px){
+    main{
+        header {
+            .header-text{
+                width: 250px;
+                h3{
+                    font-size: 22px;
+                }
+                .header-text-p1{
+                    margin-top: 5px;
+                }
+                .header-text-p2{
+                    margin-top: 5px;
+                    font-size: 13px;
+                }
+                .scroll-btn{
+                    width: 40%;
+                    i {
+                        font-size: 28px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .header-arrow1,.bio-arrow1{
+        left: $arrow-small-left - 350px;
+    }
+    .header-arrow3{
+        right: $arrow-big-right - 550px;
     }
 }
