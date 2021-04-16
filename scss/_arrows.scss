@@ -7,7 +7,7 @@
     top: $arrow-small-top;
     left: $arrow-small-left;
     box-shadow: 12px -12px  15px 10px $arrow-shadow-color;
-    transition: 0.5s;
+    transition: 0.7s;
     z-index: -1;
     .header-arrow2{
         z-index: -2;
@@ -32,7 +32,7 @@
     position: absolute;
     background: linear-gradient(to top,$arrow-gradient-out);
     transform: rotate(45deg);
-    transition: 0.5s;
+    transition: 0.7s;
     z-index: -1;
     box-shadow: -12px 12px  15px 10px $arrow-shadow-color;
 

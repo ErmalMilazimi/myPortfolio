@@ -51,7 +51,7 @@
                 transition: .5s;
     
                 &::before{
-                    transform: rotate(45deg) translate(3px,10px);
+                    transform: rotate(45deg) translate(4px,10px);
                     transition: .3s;
                     background: $secondary-font-color;
                 }
@@ -68,9 +68,9 @@
     &-btns{
         display: none;
         position: relative;
-        top: 50%;
+        top: 40%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-40%);
         list-style-type: none;
         &-btn{
             display: flex;
@@ -81,7 +81,7 @@
                 text-decoration: none;
                 color: $secondary-font-color;
                 font-weight: bold;
-                font-size: 35px;
+                font-size: 30px;
                 cursor: pointer;
                 &:hover{
                     color: #de6262;
