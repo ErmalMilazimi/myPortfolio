@@ -64,6 +64,26 @@
                 }
             }
         }
+        &:hover{
+            .nav-burger-line{
+                animation: waves 1.7s infinite;
+            }
+        }
+        
+        @keyframes waves{
+            0%{
+                transform: rotate(0deg);
+            };
+            30%{
+                transform: rotate(20deg);
+            };
+            60%{
+                transform: rotate(-20deg);
+            };
+            100%{
+                transform: rotate(0deg);
+            };
+        }
     }
     &-btns{
         display: none;

@@ -100,9 +100,9 @@
     main{
         header {
             .header-text{
-                width: 300px;
+                width: 250px;
                 h3{
-                    font-size: 28px;
+                    font-size: 22px;
                 }
                 .header-text-p1{
                     margin-top: 10px;
@@ -110,7 +110,7 @@
                 }
                 .header-text-p2{
                     margin-top: 10px;
-                    font-size: 15px;
+                    font-size: 13px;
                 }
                 .scroll-btn{
                     margin-top: 20px;
@@ -144,21 +144,21 @@
 }
 @media only screen and (max-width: 400px){
     .header-arrow1{
-        left: $arrow-small-left - 300px;
+        left: $arrow-small-left - 340px;
         .header-arrow2{
             top: -50px;
             left: -50px;
         }
     }
     .header-arrow3{
-        right: $arrow-big-right - 500px;
+        right: $arrow-big-right - 550px;
         .header-arrow4{
             top: -50px;
             right: -50px;
         }
     }
     .bio-arrow1{
-        left: $arrow-small-left - 300px;
+        left: $arrow-small-left - 340px;
         .bio-arrow2{
             top: 50px;
             left: -50px;
@@ -171,31 +171,31 @@
             .header-text{
                 width: 250px;
                 h3{
-                    font-size: 22px;
+                    font-size: 20px;
                 }
                 .header-text-p1{
                     margin-top: 5px;
                 }
                 .header-text-p2{
                     margin-top: 5px;
-                    font-size: 13px;
+                    font-size: 12px;
                 }
                 .scroll-btn{
                     width: 40%;
                     i {
-                        font-size: 28px;
+                        font-size: 26px;
                     }
                     p{
-                        font-size: 16px;
+                        font-size: 15px;
                     }
                 }
             }
         }
     }
     .header-arrow1,.bio-arrow1{
-        left: $arrow-small-left - 350px;
+        left: $arrow-small-left - 370px;
     }
     .header-arrow3{
-        right: $arrow-big-right - 550px;
+        right: $arrow-big-right - 570px;
     }
 }

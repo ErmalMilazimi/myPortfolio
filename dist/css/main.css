@@ -78,6 +78,49 @@
   background: white;
 }
 
+.nav-burger:hover .nav-burger-line {
+  -webkit-animation: waves 1.7s infinite;
+          animation: waves 1.7s infinite;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  60% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  60% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 .nav-btns {
   display: none;
   position: relative;
@@ -347,10 +390,10 @@
 
 @media only screen and (max-width: 500px) {
   main header .header-text {
-    width: 300px;
+    width: 250px;
   }
   main header .header-text h3 {
-    font-size: 28px;
+    font-size: 22px;
   }
   main header .header-text .header-text-p1 {
     margin-top: 10px;
@@ -358,7 +401,7 @@
   }
   main header .header-text .header-text-p2 {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 13px;
   }
   main header .header-text .scroll-btn {
     margin-top: 20px;
@@ -384,21 +427,21 @@
 
 @media only screen and (max-width: 400px) {
   .header-arrow1 {
-    left: -710px;
+    left: -750px;
   }
   .header-arrow1 .header-arrow2 {
     top: -50px;
     left: -50px;
   }
   .header-arrow3 {
-    right: -1110px;
+    right: -1160px;
   }
   .header-arrow3 .header-arrow4 {
     top: -50px;
     right: -50px;
   }
   .bio-arrow1 {
-    left: -710px;
+    left: -750px;
   }
   .bio-arrow1 .bio-arrow2 {
     top: 50px;
@@ -411,29 +454,29 @@
     width: 250px;
   }
   main header .header-text h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
   main header .header-text .header-text-p1 {
     margin-top: 5px;
   }
   main header .header-text .header-text-p2 {
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 12px;
   }
   main header .header-text .scroll-btn {
     width: 40%;
   }
   main header .header-text .scroll-btn i {
-    font-size: 28px;
+    font-size: 26px;
   }
   main header .header-text .scroll-btn p {
-    font-size: 16px;
+    font-size: 15px;
   }
   .header-arrow1, .bio-arrow1 {
-    left: -760px;
+    left: -780px;
   }
   .header-arrow3 {
-    right: -1160px;
+    right: -1180px;
   }
 }
 
