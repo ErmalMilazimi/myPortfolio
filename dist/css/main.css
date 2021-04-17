@@ -252,46 +252,6 @@
   right: 2390px;
 }
 
-.bio-arrow1 {
-  width: 800px;
-  height: 800px;
-  position: absolute;
-  background: -webkit-gradient(linear, left top, right top, from(#de6262), to(#ffb88c));
-  background: linear-gradient(to right, #de6262, #ffb88c);
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  bottom: -400px;
-  left: -410px;
-  -webkit-box-shadow: 12px -12px 15px 10px rgba(0, 0, 255, 0.2);
-          box-shadow: 12px -12px 15px 10px rgba(0, 0, 255, 0.2);
-  z-index: -1;
-}
-
-.bio-arrow1 .bio-arrow2 {
-  z-index: -2;
-  background: -webkit-gradient(linear, left top, right top, from(#2193b0), to(#6dd5ed));
-  background: linear-gradient(to right, #2193b0, #6dd5ed);
-  width: inherit;
-  height: inherit;
-  position: relative;
-  bottom: -100px;
-  left: -100px;
-  -webkit-box-shadow: 12px -12px 15px 10px rgba(0, 0, 255, 0.2);
-          box-shadow: 12px -12px 15px 10px rgba(0, 0, 255, 0.2);
-}
-
-.bio {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.bio2 {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
 @media only screen and (max-height: 650px) {
   #header, #bio, #projects, #contact {
     height: 630px;
@@ -317,7 +277,7 @@
   main header .header-text .header-text-p2 {
     font-size: 18px;
   }
-  .header-arrow1, .bio-arrow1 {
+  .header-arrow1 {
     left: -530px;
   }
   .header-arrow3 {
@@ -347,7 +307,7 @@
   main header .header-text .scroll-btn p {
     font-size: 18px;
   }
-  .header-arrow1, .bio-arrow1 {
+  .header-arrow1 {
     left: -550px;
   }
   .header-arrow3 {
@@ -370,17 +330,10 @@
     top: -70px;
     right: -70px;
   }
-  .bio-arrow1 {
-    left: -610px;
-  }
-  .bio-arrow1 .bio-arrow2 {
-    top: 70px;
-    left: -70px;
-  }
 }
 
 @media only screen and (max-width: 700px) {
-  .header-arrow1, .bio-arrow1 {
+  .header-arrow1 {
     left: -660px;
   }
   .header-arrow3 {
@@ -417,7 +370,7 @@
   .nav-btns-btn a {
     font-size: 25px;
   }
-  .header-arrow1, .bio-arrow1 {
+  .header-arrow1 {
     left: -690px;
   }
   .header-arrow3 {
@@ -439,13 +392,6 @@
   .header-arrow3 .header-arrow4 {
     top: -50px;
     right: -50px;
-  }
-  .bio-arrow1 {
-    left: -750px;
-  }
-  .bio-arrow1 .bio-arrow2 {
-    top: 50px;
-    left: -50px;
   }
 }
 
@@ -472,7 +418,7 @@
   main header .header-text .scroll-btn p {
     font-size: 15px;
   }
-  .header-arrow1, .bio-arrow1 {
+  .header-arrow1 {
     left: -780px;
   }
   .header-arrow3 {
@@ -508,10 +454,6 @@ body {
 
 main {
   overflow: hidden;
-}
-
-.hidden {
-  display: none;
 }
 
 header {
@@ -629,5 +571,45 @@ header .header-text .scroll-btn.circle i {
 
 header .header-text .scroll-btn.circle:hover {
   bottom: 25px;
+}
+
+section > .section-title {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  margin-top: 20px;
+}
+
+.bio {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.bio2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background: -webkit-gradient(linear, left top, right top, from(#2193b0), to(#6dd5ed));
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer P {
+  color: whitesmoke;
 }
 /*# sourceMappingURL=main.css.map */
