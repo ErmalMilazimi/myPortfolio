@@ -1,5 +1,5 @@
 @media only screen and(max-height: 650px){
-    #header,#bio,#projects,#contact {
+    #header,#education,#projects,#contact {
         height: 630px;
     }
 }
@@ -82,6 +82,15 @@
     }
 }
 @media only screen and (max-width: 700px ){
+    main{
+        .container{
+            padding: 15% 5%;
+
+            &-exp{
+                font-size: 20px;
+            }
+        }
+    }
     .header-arrow1{
         left: $arrow-small-left - 250px;
     }
@@ -120,7 +129,7 @@
         }
         .container{
             .container-title { 
-                font-size: 26px;
+                font-size: 24px;
             }
             padding: 20% 10%;
         }
