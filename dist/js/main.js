@@ -3,6 +3,8 @@ const nav = document.querySelector('.nav');
 const burgerMenu = document.querySelector('.nav-burger');
 const burger = document.querySelector('.nav-burger-line');
 const navBtn = document.querySelector('.nav-btns');
+let arrow1 = document.querySelector('.header-arrow1');
+let arrow2 = document.querySelector('.header-arrow3');
 
 let showMenu = false;
 
@@ -54,10 +56,12 @@ const sectionOneObesrver = new IntersectionObserver(function(entries,sectionOneO
     entries.forEach(entry => {
        if(!entry.isIntersecting){
         scrollBtn.classList.add('circle');
-        
+        // arrow2.classList.add('hideArrow');
+
         scroll = true;
     }else{
         scrollBtn.classList.remove('circle');
+        // arrow2.classList.remove('hideArrow');
 
         scroll = false;
     }
@@ -75,11 +79,22 @@ function scrollNav(id){
 }
 
 // arrows onload function
-
-let arrow1 = document.querySelector('.header-arrow1');
-let arrow2 = document.querySelector('.header-arrow3');
-
 function moveArrows(){
     arrow1.classList.remove('left');
     arrow2.classList.remove('right');
 }
+
+const sectionMargin = {
+    rootMargin: "-200px 0px 0px 0px"
+};
+const sectionTwo = new IntersectionObserver(function(entries,sectionMargin){
+    entries.forEach(entry => {
+       if(!entry.isIntersecting){
+        arrow2.classList.add('hideArrow');
+    }else{
+        arrow2.classList.remove('hideArrow');
+    }
+    });
+}, sectionMargin);
+
+sectionTwo.observe(header);

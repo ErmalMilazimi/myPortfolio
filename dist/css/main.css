@@ -252,6 +252,10 @@
   right: 2390px;
 }
 
+.header-arrow3.hideArrow {
+  bottom: 20%;
+}
+
 @media only screen and (max-height: 650px) {
   #header, #bio, #projects, #contact {
     height: 630px;
@@ -343,7 +347,7 @@
 
 @media only screen and (max-width: 500px) {
   main header .header-text {
-    width: 250px;
+    width: 270px;
   }
   main header .header-text h3 {
     font-size: 22px;
@@ -366,6 +370,12 @@
   }
   main header .header-text .scroll-btn p {
     font-size: 18px;
+  }
+  main .container {
+    padding: 20% 10%;
+  }
+  main .container .container-title {
+    font-size: 26px;
   }
   .nav-btns-btn a {
     font-size: 25px;
@@ -573,24 +583,39 @@ header .header-text .scroll-btn.circle:hover {
   bottom: 25px;
 }
 
-section > .section-title {
+.container {
   width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  font-size: 3rem;
+}
+
+.container-title {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  padding: 0 5px;
   color: black;
-  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 900;
 }
 
-.bio {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.bio2 {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+.container-exp {
+  color: black;
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  width: 80%;
 }
 
 footer {

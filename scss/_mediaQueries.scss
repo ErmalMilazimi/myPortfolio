@@ -93,7 +93,7 @@
     main{
         header {
             .header-text{
-                width: 250px;
+                width: 270px;
                 h3{
                     font-size: 22px;
                 }
@@ -117,6 +117,12 @@
                     }
                 }
             }
+        }
+        .container{
+            .container-title { 
+                font-size: 26px;
+            }
+            padding: 20% 10%;
         }
     }
     .nav{

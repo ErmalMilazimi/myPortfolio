@@ -36,6 +36,7 @@
     z-index: -1;
     box-shadow: -12px 12px  15px 10px $arrow-shadow-color;
 
+
     .header-arrow4{
         background: linear-gradient(to top,$arrow-gradient-inner);
         width: inherit;
@@ -47,5 +48,8 @@
     }
     &.right{
         right: $arrow-big-right + 3000px;
-    } 
+    }
+    &.hideArrow{
+        bottom: 20%;
+    }
 }
