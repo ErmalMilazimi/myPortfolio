@@ -5,6 +5,11 @@ const burger = document.querySelector('.nav-burger-line');
 const navBtn = document.querySelector('.nav-btns');
 let arrow1 = document.querySelector('.header-arrow1');
 let arrow2 = document.querySelector('.header-arrow3');
+const scrollBtn = document.querySelector('.scroll-btn');
+const education = document.getElementById("education");
+const header = document.getElementById("header");
+const containerScroll = document.querySelector('.container-scroll');
+const containerTitle = document.querySelector('.container-title');
 
 let showMenu = false;
 
@@ -26,10 +31,6 @@ function navMenu(){
 }
 
 // for button
-const scrollBtn = document.querySelector('.scroll-btn');
-const education = document.getElementById("education");
-const header = document.getElementById("header");
-
 let scroll = false;
 
 scrollBtn.addEventListener('click', scrollFunction);
@@ -84,22 +85,19 @@ function moveArrows(){
     arrow2.classList.remove('right');
 }
 
-const containerExp = document.querySelector('.container-exp');
-const containerContent = document.querySelector('.container-content');
-
 const sectionMargin = {
     rootMargin: "-200px 0px 0px 0px"
 };
 const sectionTwo = new IntersectionObserver(function(entries,sectionMargin){
     entries.forEach(entry => {
        if(!entry.isIntersecting){
-        arrow2.classList.add('hideArrow');
-        containerExp.classList.remove('hide');
-        containerContent.classList.remove('hide');
+            arrow2.classList.add('hideArrow');
+            containerScroll.classList.remove('hide');
+            containerTitle.classList.remove('hideTitle');
         }else{
             arrow2.classList.remove('hideArrow');
-            containerExp.classList.add('hide');
-            containerContent.classList.add('hide');
+            containerScroll.classList.add('hide');
+            containerTitle.classList.add('hideTitle');
         }
     });
 }, sectionMargin);
