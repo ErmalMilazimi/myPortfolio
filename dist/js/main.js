@@ -10,8 +10,13 @@ const education = document.getElementById("education");
 const header = document.getElementById("header");
 const containerScroll = document.querySelector('.container-scroll');
 const containerTitle = document.querySelector('.container-title');
-
+const loader = document.querySelector('.loader');
 let showMenu = false;
+
+window.addEventListener('load', ()=>{
+    loader.parentElement.removeChild(loader);
+    moveArrows();
+});
 
 burgerMenu.addEventListener('click', navMenu);
 
