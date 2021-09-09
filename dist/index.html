@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ermal Milazimi</title>
+    <!-- <base href="http://ermalmilazimi.ch/"> -->
+    <script>
+        if (window.location.href.includes('https')) {
+            document.querySelector('base').href = "https://ermalmilazimi.ch/";
+            console.log(document.querySelector('base').href);
+        }
+    </script>
+
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
