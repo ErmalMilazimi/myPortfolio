@@ -2,22 +2,22 @@
     width: $arrow-small-width;
     height: $arrow-small-height;
     position: absolute;
-    background: linear-gradient(to top,$arrow-gradient-out);
+    background: linear-gradient(to top,var(--arrow-gradient-out));
     transform: rotate(45deg);
     top: $arrow-small-top;
     left: $arrow-small-left;
-    box-shadow: 12px -12px  15px 10px $arrow-shadow-color;
+    box-shadow: 12px -12px  15px 10px var(--arrow-shadow-color);
     transition: 0.7s;
     z-index: -1;
     .header-arrow2{
         z-index: -2;
-        background: linear-gradient(to top,$arrow-gradient-inner);
+        background: linear-gradient(to top,var(--arrow-gradient-inner));
         width: inherit;
         height: inherit;
         position: relative;
         top: -100px;
         left: -100px;
-        box-shadow: 12px -12px  15px 10px $arrow-shadow-color;
+        box-shadow: 12px -12px  15px 10px var(--arrow-shadow-color);
     }
     &.left{
         left: $arrow-small-left + 3000px;
@@ -30,21 +30,21 @@
     bottom: $arrow-big-bottom;
     right: $arrow-big-right;
     position: absolute;
-    background: linear-gradient(to top,$arrow-gradient-out);
+    background: linear-gradient(to top,var(--arrow-gradient-out));
     transform: rotate(45deg);
     transition: 0.7s;
     z-index: -1;
-    box-shadow: -12px 12px  15px 10px $arrow-shadow-color;
+    box-shadow: -12px 12px  15px 10px var(--arrow-shadow-color);
 
 
     .header-arrow4{
-        background: linear-gradient(to top,$arrow-gradient-inner);
+        background: linear-gradient(to top,var(--arrow-gradient-inner));
         width: inherit;
         height: inherit;
         position: relative;
         top: -100px;
         right: -100px;
-        box-shadow: -12px 12px  15px 10px $arrow-shadow-color;
+        box-shadow: -12px 12px  15px 10px var(--arrow-shadow-color);
     }
     &.right{
         right: $arrow-big-right + 3000px;

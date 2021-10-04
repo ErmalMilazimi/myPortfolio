@@ -148,3 +148,33 @@ document.addEventListener("click", (e) => {
     document.querySelector("body").style.overflow = "auto";
   }
 });
+
+let theme = document.getElementById("changeTheme");
+let changeTheme = localStorage.getItem("changeTheme");
+let iconsTheme = theme.querySelectorAll('i');
+
+const setDarkMode = () =>{
+  document.querySelector("body").classList.add('background');
+  localStorage.setItem('changeTheme', "enable");
+  iconsTheme[0].classList.remove("active");
+  iconsTheme[1].classList.add("active");
+}
+
+const removeDarkMode = () =>{
+  document.querySelector("body").classList.remove('background');
+  localStorage.setItem('changeTheme', null);
+  iconsTheme[1].classList.remove("active");
+  iconsTheme[0].classList.add("active");
+}
+if(changeTheme == "enable"){
+  setDarkMode();
+}
+
+theme.addEventListener('click', () => {
+  changeTheme = localStorage.getItem("changeTheme")
+  if(changeTheme != "enable"){
+    setDarkMode();
+  }else{
+    removeDarkMode();
+  }
+})

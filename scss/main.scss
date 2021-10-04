@@ -28,25 +28,26 @@ html {
 }
 body {
   max-width: 2000px;
-  background: $primary-color;
+  background: var(--light-white-bg);
   margin: 0 auto;
+  transition: background 0.3s;
 }
 .loader {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: $secondary-color;
+  background: var(--light-blue-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: $primary-font-color;
+  color: var(--primary-font-color);
   text-align: center;
   z-index: 100;
   h1 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    color: #fff;
+    color: var(--secondary-font-color);
   }
   .spinner {
     animation: rotate 2s linear infinite;
@@ -96,12 +97,12 @@ header {
 
   .header-text {
     width: 600px;
-    color: $primary-font-color;
+    color: var(--primary-font-color);
     text-align: center;
 
     h3 {
       font-size: 50px;
-      border-bottom: 1px solid $primary-font-color;
+      border-bottom: 1px solid var(--primary-font-color);
     }
     .header-text-p1 {
       margin-top: 15px;
@@ -118,12 +119,12 @@ header {
       margin-top: 20px;
       width: 200px;
       height: 50px;
-      background: #de6262;
+      background: var(--orange-color);
       border-radius: 50px;
       border: none;
       display: flex;
       overflow: hidden;
-      color: $secondary-font-color;
+      color: var(--white-color);
       transition: 0.3s ease-in;
       cursor: pointer;
       i,
@@ -189,7 +190,7 @@ header {
     top: 20px;
     left: 10px;
     padding: 0 5px;
-    color: $primary-font-color;
+    color: var(--primary-font-color);
     font-size: 30px;
     font-weight: bolder;
     opacity: 1;
@@ -206,9 +207,9 @@ header {
     transition: 0.7s;
   }
   &-exp {
-    color: $primary-font-color;
+    color: var(--primary-font-color);
     font-size: 25px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--primary-font-color);
     width: 80%;
   }
   &-content {
@@ -246,9 +247,11 @@ header {
       }
       &-title {
         margin-top: 30px;
+        color: var(--primary-font-color);
       }
       &-text {
         margin-top: 10px;
+        color: var(--primary-font-color);
         span {
           display: block;
           margin-top: 20px;
@@ -256,7 +259,7 @@ header {
         a {
           display: block;
           margin: 20px 0;
-          color: $primary-font-color;
+          color: var(--primary-font-color);
           text-decoration: none;
         }
         &-icons {
@@ -271,17 +274,17 @@ header {
       }
       &:hover {
         top: -10px;
-        box-shadow: 12px 12px 20px 5px #de6262, -12px 12px 20px 5px #2193b0;
+        box-shadow: 12px 12px 20px 5px var(--orange-color), -12px 12px 20px 5px var(--blue-color);
       }
       &-logo {
         font-size: 60px;
-        color: $primary-font-color;
+        color: var(--primary-font-color);
       }
       .contact-txt {
         display: flex;
         flex-direction: column;
         a {
-          color: $primary-font-color;
+          color: var(--primary-font-color);
           margin-top: 15px;
           font-size: 14px;
         }
@@ -293,10 +296,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: var(--primary-font-color);
     &-up {
+      color: var(--primary-font-color);
       font-size: 25px;
       width: 80%;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid var(--primary-font-color);
     }
     &-down {
       margin-top: 15px;
@@ -307,6 +312,7 @@ header {
       justify-content: space-around;
       &-elements {
         margin: 15px;
+        color: var(--primary-font-color);
         &-img {
           width: 100px;
           height: 100px;
@@ -332,14 +338,14 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 10px rgba(var(--primary-font-color), 0.2);
     position: fixed;
     padding: 50px;
     top: 10px;
     bottom: 10px;
     left: 10px;
     right: 10px;
-    background-color: #f4f4f4;
+    background-color: var(--light-white-bg);
     border-radius: 20px;
     z-index: 9999;
     transform: translateY(110%);
@@ -356,8 +362,8 @@ header {
       top: 20px;
       right: 20px;
       font-size: 2rem;
-      background-color: #de6262;
-      color: white;
+      background-color: var(--orange-color);
+      color: var(--secondary-font-color);
       width: 25px;
       height: 25px;
       border-radius: 3px;
@@ -365,7 +371,7 @@ header {
       span {
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 52%;
         left: 50%;
         transform: translate(-42%, -54%) rotate(45deg);
       }
@@ -374,6 +380,7 @@ header {
       transform: translateY(0);
     }
     &-up {
+      color: var(--primary-font-color);
       &-title {
         font-size: 2.5rem;
       }
@@ -388,7 +395,7 @@ header {
     }
     &-down {
       position: relative;
-      border: 2px solid #dfdfdf;
+      border: 2px solid var(--light-white-bg);
       margin-top: 30px;
       width: 100%;
       min-height: 80%;
@@ -410,12 +417,12 @@ header {
 footer {
   width: 100%;
   height: 80px;
-  background: linear-gradient(to right, $arrow-gradient-inner);
+  background: linear-gradient(to right, var(--arrow-gradient-inner));
   display: flex;
   justify-content: center;
   align-items: center;
   P {
-    color: $primary-color;
+    color: var(--white-color);
   }
 }
 

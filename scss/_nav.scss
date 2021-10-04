@@ -6,7 +6,36 @@
   top: 0;
   transition: 0.3s;
   z-index: 2;
-
+  &-themeBtn{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+    i{
+      display:none;
+      width:30px;
+      height:30px;
+      padding:3px;
+      border-radius: 5px;
+      font-size:18px;
+      &.fa-sun{
+        color: var(--orange-color);
+        border: 3px solid var(--orange-color);
+      }
+      &.fa-moon{
+        color: var(--blue-color);
+        border: 3px solid var(--blue-color);
+      }
+      &.active{
+        display: block;
+      }
+    }
+  }
   &-burger {
     width: 40px;
     height: 20px;
@@ -21,14 +50,14 @@
       position: absolute;
       right: 0px;
       top: 8px;
-      background: $primary-font-color;
+      background: var(--primary-font-color);
       border-radius: 2px;
 
       &::before {
         content: "";
         width: 40px;
         height: 4px;
-        background: $primary-font-color;
+        background: var(--primary-font-color);
         position: absolute;
         top: -8px;
         border-radius: 2px;
@@ -39,7 +68,7 @@
         content: "";
         width: 30px;
         height: 4px;
-        background: $primary-font-color;
+        background: var(--primary-font-color);
         position: absolute;
         top: 8px;
         border-radius: 2px;
@@ -53,14 +82,14 @@
         &::before {
           transform: rotate(45deg) translate(4px, 10px);
           transition: 0.3s;
-          background: $secondary-font-color;
+          background: var(--secondary-font-color);
         }
 
         &::after {
           width: 40px;
           transform: rotate(-45deg) translate(1px, -8px);
           transition: 0.3s;
-          background: $secondary-font-color;
+          background: var(--secondary-font-color);
         }
       }
     }
@@ -100,12 +129,12 @@
       a {
         text-align: center;
         text-decoration: none;
-        color: $secondary-font-color;
+        color: var(--secondary-font-color);
         font-weight: bold;
         font-size: 30px;
         cursor: pointer;
         &:hover {
-          color: #de6262;
+          color: var(--orange-color);
           transition: 0.3s;
         }
       }
@@ -114,7 +143,7 @@
 
   &.show {
     height: 100vh;
-    background: linear-gradient($arrow-gradient-inner);
+    background: linear-gradient(var(--arrow-gradient-inner));
     transition: 0.3s;
     .nav-btns {
       height: 60%;

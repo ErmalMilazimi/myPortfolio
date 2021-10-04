@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ermal Milazimi</title>
-    <base href="http://ermalmilazimi.ch/">
+    <!-- <base href="http://ermalmilazimi.ch/"> -->
     <script>
         if (window.location.href.includes('https')) {
             document.querySelector('base').href = "https://ermalmilazimi.ch/";
@@ -27,6 +27,10 @@
     <main>
         <header id="header">
             <nav class="nav">
+                <div class="nav-themeBtn" id="changeTheme">
+                    <i class="fas fa-sun active"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
                 <ul class="nav-btns">
                     <li class="nav-btns-btn"><a onclick="scrollNav('header')">Home</a></li>
                     <li class="nav-btns-btn"><a onclick="scrollNav('education')">Education & Work Experience</a></li>
