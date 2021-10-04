@@ -14,20 +14,23 @@ $arrow-small-top:-400px;
     --primary-font-color: #000000;
     --secondary-font-color: #ffffff;
     --light-white-bg:#f4f4f4;
-
+    
     --arrow-shadow-color: rgba(0, 0, 0, 0.2);
     
     --orange-color: #de6262;
     --blue-color: #2193b0;
-        
+    
     --arrow-gradient-out: #de6262,#ffb88c;
     --arrow-gradient-inner: #2193b0,#6dd5ed;
-        
+    
+    --spinner-bg-color:#6dd5ed;
     --spinner-color: #0070e0;
 
     // color not affected by theme 
     --white-color: #fff;
     --black-color: #000;
+    --light-orange-color: #ffb88c;
+    --light-blue-color: #6dd5ed;
 }
 .background{
     --light-blue-color: #add8e6;
@@ -44,5 +47,6 @@ $arrow-small-top:-400px;
     --arrow-gradient-out: #a40606,#d98324;
     --arrow-gradient-inner: #380036,#0cbaba;
     
-    --spinner-color: #0070e0;
+    --spinner-bg-color:#29539b;
+    --spinner-color: #6dd5ed;
 }
