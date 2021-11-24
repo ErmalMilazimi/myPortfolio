@@ -26,9 +26,24 @@ function navMenu() {
     burger.classList.add("open");
 
     showMenu = true;
+
+    if (localStorage.getItem("changeTheme") == "enable") {
+      document.querySelector(".nav-burger-line").classList.add("theme");
+      document.querySelectorAll(".nav-btns-btn a").forEach((e) => {
+        e.classList.add("theme");
+      });
+    } else {
+      document.querySelectorAll(".theme").forEach((e) => {
+        e.classList.remove("theme");
+      });
+    }
   } else {
     burger.classList.remove("open");
     nav.classList.remove("show");
+
+    document.querySelectorAll(".theme").forEach((e) => {
+      e.classList.remove("theme");
+    });
 
     showMenu = false;
   }
@@ -107,6 +122,8 @@ const sectionTwo = new IntersectionObserver(function (entries, sectionMargin) {
 
 sectionTwo.observe(header);
 
+let date = new Date();
+document.querySelector("#footer-year").innerText = date.getFullYear();
 // for modal
 let modalTitle = document.querySelector("#modal-title");
 let modalDesc = document.querySelector("#modal-desc");
@@ -141,8 +158,6 @@ document.addEventListener("click", (e) => {
       modalIframe.src = "";
     }
   }
-});
-document.addEventListener("click", (e) => {
   if (e.target.closest(".container-modal-close")) {
     document.querySelector(".container-modal").classList.remove("active");
     document.querySelector("body").style.overflow = "auto";
@@ -151,30 +166,37 @@ document.addEventListener("click", (e) => {
 
 let theme = document.getElementById("changeTheme");
 let changeTheme = localStorage.getItem("changeTheme");
-let iconsTheme = theme.querySelectorAll('i');
+let iconsTheme = theme.querySelectorAll("i");
 
-const setDarkMode = () =>{
-  document.querySelector("body").classList.add('background');
-  localStorage.setItem('changeTheme', "enable");
+const setDarkMode = () => {
+  document.querySelector("body").classList.add("background");
+  localStorage.setItem("changeTheme", "enable");
   iconsTheme[0].classList.remove("active");
   iconsTheme[1].classList.add("active");
-}
+};
 
-const removeDarkMode = () =>{
-  document.querySelector("body").classList.remove('background');
-  localStorage.setItem('changeTheme', null);
+const removeDarkMode = () => {
+  document.querySelector("body").classList.remove("background");
+  localStorage.setItem("changeTheme", null);
   iconsTheme[1].classList.remove("active");
   iconsTheme[0].classList.add("active");
-}
-if(changeTheme == "enable"){
+};
+if (changeTheme == "enable") {
   setDarkMode();
 }
 
-theme.addEventListener('click', () => {
-  changeTheme = localStorage.getItem("changeTheme")
-  if(changeTheme != "enable"){
+theme.addEventListener("click", () => {
+  changeTheme = localStorage.getItem("changeTheme");
+  if (changeTheme != "enable") {
     setDarkMode();
-  }else{
+  } else {
     removeDarkMode();
   }
-})
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    document.querySelector(".container-modal").classList.remove("active");
+    document.querySelector("body").style.overflow = "auto";
+  }
+});

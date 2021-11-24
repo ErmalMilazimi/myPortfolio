@@ -1,52 +1,51 @@
-$arrow-big-width:1200px;
-$arrow-big-height:1200px;
-$arrow-big-right:-610px;
-$arrow-big-bottom:-600px;
-    
-$arrow-small-width:800px;
-$arrow-small-height:800px;
-$arrow-small-left:-410px;
-$arrow-small-top:-400px;
+$arrow-big-width: 1200px;
+$arrow-big-height: 1200px;
+$arrow-big-right: -610px;
+$arrow-big-bottom: -600px;
 
+$arrow-small-width: 800px;
+$arrow-small-height: 800px;
+$arrow-small-left: -410px;
+$arrow-small-top: -400px;
 
-:root{
-    --light-blue-color: #add8e6;
-    --primary-font-color: #000000;
-    --secondary-font-color: #ffffff;
-    --light-white-bg:#f4f4f4;
-    
-    --arrow-shadow-color: rgba(0, 0, 0, 0.2);
-    
-    --orange-color: #de6262;
-    --blue-color: #2193b0;
-    
-    --arrow-gradient-out: #de6262,#ffb88c;
-    --arrow-gradient-inner: #2193b0,#6dd5ed;
-    
-    --spinner-bg-color:#6dd5ed;
-    --spinner-color: #0070e0;
+:root {
+  --light-blue-color: #add8e6;
+  --primary-font-color: #000000;
+  --secondary-font-color: #ffffff;
+  --light-white-bg: #f4f4f4;
 
-    // color not affected by theme 
-    --white-color: #fff;
-    --black-color: #000;
-    --light-orange-color: #ffb88c;
-    --light-blue-color: #6dd5ed;
+  --arrow-shadow-color: rgba(0, 0, 0, 0.2);
+
+  --orange-color: #de6262;
+  --blue-color: #2193b0;
+
+  --arrow-gradient-out: #de6262, #ffb88c;
+  --arrow-gradient-inner: #2193b0, #6dd5ed;
+
+  --spinner-bg-color: #6dd5ed;
+  --spinner-color: #0070e0;
+
+  // color not affected by theme
+  --white-color: #fff;
+  --black-color: #000;
+  --light-orange-color: #ffb88c;
+  --light-blue-color: #6dd5ed;
 }
-.background{
-    --light-blue-color: #add8e6;
-    --primary-font-color: #fff;
-    --secondary-font-color: #000;
-    
-    --light-white-bg:#121212;
-    
-    --arrow-shadow-color: rgba(117, 117, 117, .2);
-    
-    --orange-color: #d98324;
-    --blue-color: #2193b0;
+.background {
+  --light-blue-color: #add8e6;
+  --primary-font-color: #fff;
+  --secondary-font-color: #000;
 
-    --arrow-gradient-out: #a40606,#d98324;
-    --arrow-gradient-inner: #380036,#0cbaba;
-    
-    --spinner-bg-color:#29539b;
-    --spinner-color: #6dd5ed;
+  --light-white-bg: #121212;
+
+  --arrow-shadow-color: rgba(117, 117, 117, 0.2);
+
+  --orange-color: #d98324;
+  --blue-color: #2193b0;
+
+  --arrow-gradient-out: #a40606, #d98324;
+  --arrow-gradient-inner: #380036, #0cbaba;
+
+  --spinner-bg-color: #29539b;
+  --spinner-color: #6dd5ed;
 }

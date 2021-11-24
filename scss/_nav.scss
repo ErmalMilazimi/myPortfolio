@@ -6,35 +6,35 @@
   top: 0;
   transition: 0.3s;
   z-index: 2;
-  &-themeBtn{
+  &-themeBtn {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 20px;
     left: 25px;
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     z-index: 3;
-    i{
-      display:none;
-      width:30px;
-      height:30px;
-      padding:3px;
+    i {
+      display: none;
+      width: 30px;
+      height: 30px;
+      padding: 3px;
       border-radius: 5px;
-      font-size:18px;
-      &.fa-sun{
+      font-size: 18px;
+      &.fa-sun {
         text-shadow: 0px 0px 10px var(--light-orange-color);
         color: var(--orange-color);
         border: 3px solid var(--orange-color);
       }
-      &.fa-moon{
+      &.fa-moon {
         text-shadow: 0px 0px 10px var(--light-blue-color);
         color: var(--spinner-color);
         border: 3px solid var(--spinner-color);
       }
-      &.active{
+      &.active {
         display: block;
       }
     }
@@ -95,6 +95,18 @@
           background: var(--secondary-font-color);
         }
       }
+      &.theme {
+        &::before {
+          background: var(--primary-font-color);
+        }
+
+        &::after {
+          width: 40px;
+          transform: rotate(-45deg) translate(1px, -8px);
+          transition: 0.3s;
+          background: var(--primary-font-color);
+        }
+      }
     }
     &:hover {
       .nav-burger-line {
@@ -136,6 +148,9 @@
         font-weight: bold;
         font-size: 30px;
         cursor: pointer;
+        &.theme {
+          color: var(--primary-font-color);
+        }
         &:hover {
           color: var(--orange-color);
           transition: 0.3s;
